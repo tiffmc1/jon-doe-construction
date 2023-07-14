@@ -2,7 +2,8 @@
 
 ## Description
 
-<img align="right" width=343 height=353 src="src/assets/images/hangman-README.png">
+<img align="right" width=343 height=353 src="images
+/fulllogo_transparent.png">
 <p align="left">Jon Doe Construction is a construction business website adapted for both desktop and mobile devices</p>
 
 ## Technologies
