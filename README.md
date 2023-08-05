@@ -1,44 +1,34 @@
-# Jon Doe Construction
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Description
+## Getting Started
 
-<img align="right" width=343 height=353 src="/images/fulllogo_transparent.png">
-<p align="left">Jon Doe Construction is a construction business website adapted for both desktop and mobile devices</p>
+First, run the development server:
 
-## Technologies As Of July 14, 2023
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-- Vanilla ES6 JavaScript
-- SASS/SCSS
-- CDNJS -- icons & swiper functionality
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Game-Plan
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-<p>This website is an on-going, long-term project. Each tier represents the timeline in which this application is being built. The initial foundation is a clone from a previous application built for another project. It only contained a front-end, utilizing vanilla Javascript, semantic HTML, and SASS/SCSS. Tier 1 will be the process of moving that code into a larger framework which will be able to handle a more robust full-stack application.</p>
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-# Tier 1
+## Learn More
 
-- Install Next.js and move code into updated directory
-- Change from being a single layout into multiple pages/layouts for users to navigate between
-- Add input forms for users to be able to sign-up and login to their accounts (functionality added in Tier 2)
-- Add input forms for a contact messaging system (functionality added in Tier 4)
+To learn more about Next.js, take a look at the following resources:
 
-# Tier 2
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-- Create user pages. Users should be able to create an account where they can view/update their account information and view their order history from the company
-- Set up PostreSQL and Prisma for back-end
-- Create user db model
-- Add authentication for user login/sign-up functionality
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-# Tier 3
+## Deploy on Vercel
 
-- Create services db model, which will include the type of service, price of that service per area, etc.
-- Pull services data from the db and display onto services page for users to see
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-# Tier 4
-
-- Add functionality for contact form
-- Incorporate an admin account so admins can add, update, and/or delete order history information for users
-
-## Installation
-
-No installation is needed
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
