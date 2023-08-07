@@ -46,14 +46,15 @@
 }
 
 @mixin iconsBox() {
-	height: 5rem;
-	width: 5rem;
+	height: 4rem;
+	width: 4rem;
 	line-height: 5rem;
 	font-size: 3rem;
 	background: var(--light-bg);
 	color: var(--black);
 	cursor: pointer;
 	text-align: center;
+	border-radius: 10%;
 
 	&:hover {
 		background: var(--blue_navy);
@@ -136,7 +137,7 @@ section {
 	}
 
 	.navbar {
-		.a {
+		.nav-link {
 			@include titleText(2rem);
 			margin: 0 1rem;
 
@@ -146,13 +147,15 @@ section {
 		}
 	}
 
-	.icons div {
-		@include iconsBox();
-		margin-left: 0.3rem;
-	}
+	.icons {
+		.MuiSvgIcon-root {
+			@include iconsBox();
+			margin-left: 0.3rem;
+		}
 
-	.menu-btn {
-		display: none;
+		.menu-btn {
+			display: none;
+		}
 	}
 }
 
@@ -167,20 +170,21 @@ section {
 	z-index: 1100;
 	padding: 0 2rem;
 	padding-top: 5rem;
+	box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+	display: block;
 	// display: none;
-
-	// &.active {
-	// 	box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
-	// 	display: block;
-	// }
 
 	.close-contact-info {
 		position: absolute;
 		top: 1rem;
 		right: 1.5rem;
 		cursor: pointer;
-		font-size: 4rem;
 		color: var(--black);
+
+		.MuiSvgIcon-root {
+			height: 4rem;
+			width: 4rem;
+		}
 
 		&:hover {
 			transform: rotate(90deg);
@@ -190,7 +194,7 @@ section {
 	.info {
 		padding: 1rem 0;
 
-		i {
+		.MuiSvgIcon-root {
 			@include iconsBox();
 			margin-bottom: 0.2rem;
 		}
@@ -210,7 +214,7 @@ section {
 		border-top: var(--border);
 		margin-top: 1rem;
 
-		.social {
+		.MuiSvgIcon-root {
 			@include iconsBox();
 			margin: 0.4rem;
 		}
@@ -561,8 +565,10 @@ section {
 	}
 
 	.header {
-		.menu-btn {
-			display: inline-block;
+		.icons {
+			.menu-btn {
+				display: inline-block;
+			}
 		}
 
 		.navbar {
